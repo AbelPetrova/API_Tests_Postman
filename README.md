@@ -6,7 +6,7 @@ The Trello API offers powerful functionality for developers to programmatically 
 API Source: https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/#your-first-api-call \
 API Documentation: https://developer.atlassian.com/cloud/trello/rest/api-group-actions/#api-group-actions 
 
-> [!NOTE]
+> [!IMPORTANT]
 > A Trello account is needed in order to receive your unique API authentication Key and Token.
 
 ## Functionality Tests
@@ -19,5 +19,4 @@ Documentation link: https://developer.atlassian.com/cloud/trello/rest/api-group-
 Request method used: **GET** \
 Parameters used: apiKey, apiToken 
 
-
-
+![Screenshot of Get all boards request](Postman_GIT_Screenshots/GetAllBoards.jpg)
