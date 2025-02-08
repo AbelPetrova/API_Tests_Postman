@@ -77,3 +77,14 @@ Parameters used: apiKey, apiToken, id(board)
 **Breakdown:** *In the following request we want to check if the deleted board was indeed deleted from the database* 
 
 ![Screenshot delete created board](Postman_GIT_Screenshots/DeletedBoardCheck.jpg)
+
+## Script Tests 
+
+***1. "Response body structure and data validation test"***\
+Request method used: **GET** \
+Parameters used: apiKey, apiToken, id (5901bedbfb1bfc2119b5cc58)
+
+**Breakdown:** *The following script aims to verify few body response data* 
+
+![Screenshot Body Response test](Postman_GIT_Screenshots/BodyResponseTests.jpg) \
+:page_with_curl: Body response: [Here](Postman_GIT_Screenshots/BodyResponseGetSingleBoard.json)
