@@ -80,7 +80,7 @@ Parameters used: apiKey, apiToken, id(board)
 
 ## Script Tests 
 
-***1. "Response body structure and data validation test"***\
+***1. Response body structure and data validation test***\
 Request method used: **GET** \
 Parameters used: apiKey, apiToken, id (5901bedbfb1bfc2119b5cc58)
 
@@ -88,3 +88,44 @@ Parameters used: apiKey, apiToken, id (5901bedbfb1bfc2119b5cc58)
 
 ![Screenshot Body Response test](Postman_GIT_Screenshots/BodyResponseTests.jpg) \
 :page_with_curl: Body response: [Here](Postman_GIT_Screenshots/BodyResponseGetSingleBoard.json)
+
+***2. Error handling - status code 400 - Invalid board id case***\
+Request method used: **GET** \
+Parameters used: apiKey, apiToken, id (random generated, non-existent)
+
+**Breakdown:** *The following script aims to check the status code as well as the error message when the conditions are met (invalid id)* 
+
+![Screenshot Error Handling - code 400](Postman_GIT_Screenshots/BadRequest400InvalidBoardId.jpg) 
+
+***3. Error handling - status code 401 - Invalid Trello api key***\
+Request method used: **POST** \
+Parameters used: apiKey(invalid), apiToken, name 
+
+**Breakdown:** *The following script aims to check the status code as well as the error message while using an invalid __api key__.* 
+
+![Screenshot Error Handling - code 401_trelloKey](Postman_GIT_Screenshots/Unauthorized401CreateBoardUsingInvalidTreloKey.jpg) 
+
+***4. Error handling - status code 401 - Invalid Trello api Token***\
+Request method used: **POST** \
+Parameters used: apiKey, apiToken(invalid), name 
+
+**Breakdown:** *The following script aims to check the status code as well as the error message while using an invalid __api token__.* 
+
+![Screenshot Error Handling - code 401_trelloToken](Postman_GIT_Screenshots/Unauthorized401CreateBoardUsingInvalidTreloToken.jpg) 
+
+***5. Error handling - status code 400 - Full Workspaces case***\
+Request method used: **POST** \
+Parameters used: apiKey, apiToken, name 
+
+**Breakdown:** *The following script aims to check the status code as well as the error message when the workspace has reached the limit number of boards* 
+
+![Screenshot Error Handling - code 400_WorkspaceFull](Postman_GIT_Screenshots/WorkSpacesFullCaseBadRequest400.jpg) 
+
+***6. Performance - Time response test***\
+Request method used: **GET** \
+Parameters used: apiKey, apiToken 
+
+**Breakdown:** *The following script aims to check the time response for an api call, in this particular case, when all boards are shown* 
+
+![Screenshot TimeReponseShowAllBoards](Postman_GIT_Screenshots/TimeResponseTest.jpg) 
+
