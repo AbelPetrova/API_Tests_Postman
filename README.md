@@ -1,6 +1,4 @@
 # API Tests using Postman
-> [!WARNING]
-> Work in progress.
 
 Hello,
 
@@ -12,7 +10,7 @@ API Documentation: https://developer.atlassian.com/cloud/trello/rest/api-group-a
 > [!IMPORTANT]
 > A Trello account is needed in order to receive your unique API authentication Key and Token.
 
-***Jump to [Script Tests](#script-tests)***
+:arrow_upper_right:	***Jump to [Script Tests](#script-tests)***
 
 ## Functionality Tests
 
